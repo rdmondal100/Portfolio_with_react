@@ -5,74 +5,101 @@ import { FaCode } from "react-icons/fa";
 
 import { MdMarkEmailRead } from "react-icons/md";
 import { useNavigate, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const navItems = [
 	{
 		name: "Home",
+		activeName: "<Home/>",
 		icon: <HiHome />,
 		slug: "/home",
 	},
 	{
 		name: "Projects",
+		activeName: "<Projects/>",
+
 		icon: <FaCode />,
 		slug: "/projects",
 	},
 	{
 		name: "Blogs",
+		activeName: "<Blogs/>",
+
 		icon: <FaBloggerB />,
 		slug: "/blogs",
 	},
 	{
 		name: "Contact",
+		activeName: "<Contact/>",
+
 		icon: <MdMarkEmailRead />,
 		slug: "/contact",
 	},
 ];
 
-const MenuBar = ({ containerStyles }) => {
+const MenuBar = ({ containerStyles, underLineStyles }) => {
 	const navigate = useNavigate();
 	const currentPath = useLocation();
 	return (
-		<div className={`${containerStyles} list-none text-foreground text-xl`}>
+		<div
+			className={`${containerStyles} list-none text-foreground text-sm  lg:text-lg lg:gap-12 xl:text-xl xl:gap-16  font-aclonica`}
+		>
 			{navItems.map((item) => (
 				<li
 					key={item.name}
-					className={`cursor-pointer transition-all hover:text-muted-foreground  ${
-						currentPath.pathname == item.slug ? "text-primary border-b-2 border-primary scale-110 -translate-y-[.2rem] " : null
+					className={`cursor-pointer transition-all hover:text-primary  ${
+						currentPath.pathname == item.slug
+							? "text-primary  scale-110 -translate-y-[.2rem] "
+							: null
 					} `}
 					onClick={() => navigate(item.slug)}
 				>
-					{item.name}
+					{currentPath.pathname == item.slug && (
+						<motion.span
+							initial={{ y: "-100%" }}
+							animate={{ y: 0 }}
+							transition={{ type: "tween" }}
+							layoutId="underLine"
+							className={`${underLineStyles}`}
+						/>
+					)}
+					{currentPath.pathname == item.slug ? item.activeName : item.name}
 				</li>
 			))}
 		</div>
 	);
 };
 
-export const MobileMenueBar = () => {
+export const MobileMenueBar = ({mobileTopLine}) => {
 	const navigate = useNavigate();
 	const currentPath = useLocation();
 	console.log(currentPath);
 
 	return (
-		<div className="list-none fixed bottom-0 flex justify-between items-center w-full px-3 h-12 md:h-14 bg-foreground/20 backdrop-blur-xl md:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10">
+		<div className="list-none fixed bottom-0 flex justify-between items-center w-full px-8 h-12 md:h-14 bg-foreground/20 backdrop-blur-xl md:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10">
 			{navItems.map((item) => (
 				<li
 					key={item.slug}
-					className={`cursor-pointer text-xl flex flex-col justify-center items-center sm:text-2xl  ${
-						currentPath.pathname == item.slug ? "text-primary " : null
+					className={`cursor-pointer text-xl flex flex-col justify-center transition-all items-center sm:text-2xl  ${
+						currentPath.pathname == item.slug && "text-primary "
 					}`}
 					onClick={() => navigate(item.slug)}
 				>
+					
 					{item.icon}{" "}
-					<span
-						className={` absolute transition-all	 ${
-							currentPath.pathname == item.slug
-								? "w-14 h-[.2rem] top-0 bg-primary rounded-sm "
-								: null
-						}`}
-					></span>
-					<span className="text-[.7rem] absolute top-5">{item.name}</span>
+					
+					<span className="text-[.7rem] absolute top-5 font-aclonica">
+						{item.name}
+					</span>
+					{currentPath.pathname == item.slug && (
+						<motion.span
+							initial={{ y: "-100%" }}
+							animate={{ y: 0 }}
+							transition={{ type: "tween" }}
+							layoutId="mobilemenu"
+							className={`${mobileTopLine}`}
+						/>
+					)}
 				</li>
 			))}
 		</div>

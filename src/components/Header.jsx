@@ -32,9 +32,9 @@ const Header = () => {
 			<div className=" px-2 mx-auto bg-foreground/20  h-16 flex backdrop-blur-md">
 				<div className="flex justify-between items-center w-full">
 					{/* Logo */}
-					logo
+					<div className=" text-sm sm:text-lg md:text-xl xl:text-2xl text-foreground font-aclonica">Riday Mondal</div>
 					<div>
-						<MenuBar containerStyles='hidden md:flex gap-x-8 items-center'/>
+						<MenuBar containerStyles='hidden md:flex gap-x-8 items-center' underLineStyles='absolute left-0 top-full h-[2px] bg-primary w-full'/>
 					
 					</div>
 					<div className="flex gap-3  ">
@@ -47,7 +47,8 @@ const Header = () => {
 					{/* mobile menu  */}            
 					
 			</div>
-					<MobileMenueBar />
+					<MobileMenueBar mobileTopLine='absolute rounded-lg bottom-full h-[2px] bg-primary w-16 '/>
+
 		</header>
 	);
 };
