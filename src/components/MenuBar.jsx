@@ -12,7 +12,7 @@ const navItems = [
 		name: "Home",
 		activeName: "<Home/>",
 		icon: <HiHome />,
-		slug: "/home",
+		slug: "/",
 	},
 	{
 		name: "Projects",
@@ -37,12 +37,13 @@ const navItems = [
 	},
 ];
 
+// eslint-disable-next-line react/prop-types
 const MenuBar = ({ containerStyles, underLineStyles }) => {
 	const navigate = useNavigate();
 	const currentPath = useLocation();
 	return (
 		<div
-			className={`${containerStyles} list-none text-foreground text-sm  lg:text-lg lg:gap-12 xl:text-xl xl:gap-16  font-aclonica`}
+			className={`${containerStyles} list-none text-foreground text-lg xl:text-xl font-aclonica`}
 		>
 			{navItems.map((item) => (
 				<li
@@ -70,13 +71,14 @@ const MenuBar = ({ containerStyles, underLineStyles }) => {
 	);
 };
 
+// eslint-disable-next-line react/prop-types
 export const MobileMenueBar = ({mobileTopLine}) => {
 	const navigate = useNavigate();
 	const currentPath = useLocation();
 	console.log(currentPath);
 
 	return (
-		<div className="list-none fixed bottom-0 flex justify-between items-center w-full px-8 h-12 md:h-14 bg-foreground/20 backdrop-blur-xl md:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10">
+		<div className="list-none fixed bottom-0 flex justify-between items-center w-full px-8 h-12 md:h-14 bg-foreground/20 backdrop-blur-xl lg:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10">
 			{navItems.map((item) => (
 				<li
 					key={item.slug}

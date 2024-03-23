@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import  ThemeProvider  from "@/components/theme-provider";
+import ThemeProvider from "@/components/theme-provider";
+import { MobileMenueBar } from "./components/MenuBar";
 
 function App() {
 	return (
@@ -10,7 +11,9 @@ function App() {
 				<Header />
 				<Outlet />
 				<Footer />
-				
+				<div className="fixed bottom-0">
+					<MobileMenueBar mobileTopLine=" fixed rounded-lg bottom-full h-[2px] bg-primary w-16 " />
+				</div>
 			</ThemeProvider>
 		</>
 	);
