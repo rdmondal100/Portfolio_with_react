@@ -20,6 +20,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'aclonica': ['Aclonica', 'sans-serif'],
+        'heading_font': ['Rowdies', 'sans-serif'],
+        'general_font': ['Nunito', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
