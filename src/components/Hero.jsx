@@ -3,12 +3,13 @@ import { riday } from "../assets/index";
 import { Button } from "./ui/button";
 import { BsFillSendFill } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa";
 
 const Hero = () => {
 	const navigate = useNavigate();
 	return (
-		<div className="container lg:flex-row flex flex-col-reverse lg:mt-10  px-10">
-			<div className="details lg:w-2/4  flex flex-wrap  gap-2 lg:gap-4 xl:gap-0 ">
+		<main className="container mt-3  lg:flex-row flex flex-col-reverse md:mt-0 lg:mt-10   px-10  h-[92vh] xl:h-[80vh]">
+			<div className="details lg:w-2/4 flex flex-col flex-1 gap-2 lg:gap-4 xl:gap-8 lg:mt-16">
 				<span className=" font-general_font text-primary/70 text-lg flex justify-center w-full  lg:justify-start">
 					FRONTEND DEVELOPER
 				</span>
@@ -20,10 +21,12 @@ const Hero = () => {
 					</span>
 				</div>
 				<div className=" text-center font-general_font text-lg flex justify-center w-full  text-foreground/70 lg:justify-start lg:text-start ">
-					I am a student of computer science and engineering at Bangabandhu Sheikh Mujibur Rahaman Science and Technology University  in Bangladesh. 
+					I am a student of computer science and engineering at Bangabandhu
+					Sheikh Mujibur Rahaman Science and Technology University in
+					Bangladesh.
 				</div>
 
-				<div className="flex  pt-2 flex-col gap-3 m-auto  justify-center lg:pt-0 lg:flex-row lg:m-0">
+				<div className="flex  pt-1 flex-col gap-3 m-auto mt-0 sm:mt-3  lg:pt-0 lg:flex-row lg:m-0">
 					<Button
 						className="flex gap-1 "
 						onClick={() => navigate("/contact")}
@@ -39,10 +42,17 @@ const Hero = () => {
 					</Button>
 				</div>
 			</div>
-			<div className="img justify-center items-center flex lg:w-2/4">
-				<img src={riday} alt="Riday Mondal" className=" w-64 md:w-72 lg:w-80 xl:w-[22rem]" />
+			<div className="img justify-center items-center flex lg:w-2/4 lg:h-[80vh] mt-[-1.5rem] ">
+				<img
+					src={riday}
+					alt="Riday Mondal"
+					className=" w-64 md:w-72 lg:w-80 xl:w-[22rem]"
+				/>
 			</div>
-		</div>
+			<div className="hidden md:flex absolute left-2/4 bottom-11 lg:bottom-2 animate-bounce">
+				<FaAngleDown className="text-3xl text-primary " />
+			</div>
+		</main>
 	);
 };
 
