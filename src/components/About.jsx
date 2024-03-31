@@ -121,8 +121,8 @@ const About = () => {
 		return arr.find((item) => item.title === title);
 	};
 	return (
-		<section className=" xl:h-[860px] h-screen pb-12 xl:py-24 relative top-0 ">
-			<div className=" px-3 md:container mx-auto   pb-16">
+		<section className="   pb-12 xl:py-24 relative top-0 ">
+			<div className=" px-3 md:container mx-auto   ">
 				<h2 className="section-title mb-8 xl:mb-16 text-center mx-auto text-primary/90  font-general_font ">
 					About me
 				</h2>
@@ -132,7 +132,7 @@ const About = () => {
 						<img src={aboutImg} alt="" className=" w-72  xl:w-96" />
 					</div>
 					{/* tabs */}
-					<div className=" flex-1 gap-6  md:w-2/4 w-full justify-center ">
+					<div className=" flex-1 gap-6  md:w-2/4 w-full justify-center h-full">
 						<Tabs defaultValue="personal">
 							<TabsList className="flex justify-between xl:h-12  font-general_font ">
 								<TabsTrigger
@@ -177,70 +177,88 @@ const About = () => {
 														<div className=" text-primary">
 															{item.icon}
 														</div>
-														<div className="text-secondary-foreground/90">{item.text}</div>
+														<div className="text-secondary-foreground/90">
+															{item.text}
+														</div>
 													</div>
 												);
 											})}
 										</div>
 										{/* language */}
 										<div className="flex flex-col font-general_font">
-											<div className=" text-primary text-xl mx-auto md:mx-0">
+											<div className=" text-primary text-xl mx-auto md:mx-0 pb-1">
 												Language I Speak
 											</div>
 											<div className="border-b border-border "></div>
-											<div className=" mx-auto md:mx-0 text-foreground text-base">
-												English, Bangla, Hindi
+											<div className=" mx-auto md:mx-0 text-foreground text-base mt-3">
+												English | Bangla | Hindi
 											</div>
 										</div>
 									</div>
 								</TabsContent>
 								<TabsContent value="skill">
-											<div className=" text-center lg:text-left">
-												<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl text-center">Tools I Use</h3>
-												<div className=" mb-10">
-													<h4 className=" text-xl md:text-2xl mt-5 text-primary md:text-left font-semibold mb-2">Skills</h4>
-													<div className="border-b border-border mb-4"></div>
-													{/* skill lists */}
-													<div className=" text-secondary-foreground/90">
-														{getData(skillData,'skills').data.map((item,index)=>{
-
-															const {name}=item;
-															return (
-																<div className="w-2/4  text-center md:mx-0 md:text-left mx-auto xl:mx-0 text-base md:text-lg" key={index}>
-																	<div className="font-medium">{name}</div>
+									<div className=" text-center lg:text-left">
+										<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl text-center">
+											Tools I Use
+										</h3>
+										<div className=" mb-10">
+											<h4 className=" text-xl md:text-2xl mt-5 text-primary md:text-left font-semibold mb-2">
+												Skills
+											</h4>
+											<div className="border-b border-border mb-4"></div>
+											{/* skill lists */}
+											<div className=" text-secondary-foreground/90">
+												{getData(skillData, "skills").data.map(
+													(item, index) => {
+														const { name } = item;
+														return (
+															<div
+																className="w-2/4  text-center md:mx-0 md:text-left mx-auto xl:mx-0 text-base md:text-lg"
+																key={index}
+															>
+																<div className="font-medium">
+																	{name}
 																</div>
-															)
-														})}
-													</div>
-			
-												</div>
-
-												{/* tools  */}
-												<div className="mb-10">
-													<h4 className="text-xl md:text-2xl font-semibold mb-2 md:text-left  text-primary">Tools</h4>
-													<div className="border-b border-border mb-4"></div>
-													{/* tool list  */}
-													<div className="flex gap-x-5   justify-center md:justify-start">
-														{getData(skillData,'tools').data.map((item,index)=>{
-															const {icon}=item;
-															return (
-																<div key={index} className=" text-3xl md:text-4xl text-primary">
-																	{icon}
-																</div>
-															)
-														})}
-													</div>
-												</div>
+															</div>
+														);
+													}
+												)}
 											</div>
+										</div>
+
+										{/* tools  */}
+										<div className="mb-10">
+											<h4 className="text-xl md:text-2xl font-semibold mb-2 md:text-left  text-primary">
+												Tools
+											</h4>
+											<div className="border-b border-border mb-4"></div>
+											{/* tool list  */}
+											<div className="flex gap-x-5   justify-center md:justify-start">
+												{getData(skillData, "tools").data.map(
+													(item, index) => {
+														const { icon } = item;
+														return (
+															<div
+																key={index}
+																className=" text-3xl md:text-4xl text-primary"
+															>
+																{icon}
+															</div>
+														);
+													}
+												)}
+											</div>
+										</div>
+									</div>
 								</TabsContent>
 								<TabsContent value="qualifications">
-									<div className=" font-general_font">
-										<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl text-center mb-4">
+									<div className=" font-general_font pb-20">
+										<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl text-center mb-6">
 											My Journey
 										</h3>
-										<div className=" xl:grid xl:grid-cols-2 gap-x-4">
-												{/* educations */}
-												<div className="  flex flex-col gap-x-4  text-[22px] text-primary">
+										<div className=" xl:grid xl:grid-cols-2 gap-x-4 relative mb-">
+											{/* educations */}
+											<div className="  flex flex-col gap-x-4  text-[22px] text-primary px-2">
 												<div className=" flex gap-x-4 items-center text-[22px] text-primary">
 													<GraduationCap />
 													<h4 className=" capitalize font-medium ">
@@ -273,7 +291,7 @@ const About = () => {
 																</div>
 
 																<div className=" ml-3">
-																	<div className="font-semibold text-foreground text-xl leading-none mb-2">
+																	<div className="font-semibold text-foreground text-xl leading-none mb-4">
 																		{institute}
 																	</div>
 																	<div className=" text-lg leading-none text-muted-foreground mb-4">
@@ -289,8 +307,8 @@ const About = () => {
 												</div>
 											</div>
 											{/* experience  */}
-											<div className=" flex flex-col gap-x-4  text-[22px] text-primary">
-												<div className=" flex gap-x-4 items-center text-[22px] text-primary mt-10">
+											<div className=" flex flex-col gap-x-4 xl:mt-0 mt-8  text-[22px] text-primary">
+												<div className=" flex gap-x-4 items-center text-[22px] text-primary ">
 													<Briefcase />
 													<h4 className=" capitalize font-medium ">
 														{
@@ -333,7 +351,6 @@ const About = () => {
 													})}
 												</div>
 											</div>
-										
 										</div>
 									</div>
 								</TabsContent>
