@@ -1,6 +1,7 @@
 import { FaLaptopCode } from "react-icons/fa";
 import { HiPaintBrush } from "react-icons/hi2";
 import { TbDeviceMobileCode } from "react-icons/tb";
+import { BiMerge } from "react-icons/bi";
 
 import {
     Card,
@@ -31,18 +32,21 @@ const servicesData = [
 ];
 const Services = () => {
     return (
-        <section className=" mb-12 xl:mb-36">
+        <section className=" mb-12 xl:mb-36 relative">
             <div className=" container px-4 mx-auto ">
-                <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto text-primary/90  font-general_font ">
-                    My Services
-                </h2>
+                <div className="section-title">
+
+                    <BiMerge className="section-logo" />
+
+                    <h2 className=" ">My Services</h2>
+                </div>
                 {/* services name  */}
-                <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+                <div className="grid xl:grid-cols-3 place-items-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
                     {servicesData.map((item, index) => {
                         return (
                             <Card
                                 key={index}
-                                className="w-full max-w-[424px] h-[300px] flex-col pt-16 pb-10 justify-center items-center bg-background  relative border-primary/20 shadow-lg"
+                                className="w-full max-w-[424px] h-[300px] flex-col pt-16 pb-10 justify-center items-center bg-background  relative border-primary/20 shadow-lg m-3 shadow-primary/10"
                             >
                                 <CardHeader className=" text-primary absolute -top-12 w-full justify-center flex items-center ">
                                     <div
@@ -56,8 +60,8 @@ const Services = () => {
                                     <div className=" text-center pb-5 font-heading_font text-foreground/85 font-normal">
                                         <CardTitle>{item.title}</CardTitle>
                                     </div>
-                                    <div className=" text-center text-muted-foreground xl:text-lg text-base">
-                                        <CardDescription>
+                                    <div className=" text-center text-muted-foreground ">
+                                        <CardDescription className='xl:text-xl text-lg'>
                                             {item.descriptions}
                                         </CardDescription>
                                     </div>

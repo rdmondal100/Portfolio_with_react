@@ -17,7 +17,7 @@
       --popover-foreground: 224 71.4% 4.1%;
       --primary: 262.1 83.3% 57.8%;
       --primary-foreground: 210 20% 98%;
-      --secondary: 220 14.3% 95.9%;
+      --secondary: 225 7% 77%;
       --secondary-foreground: 220.9 39.3% 11%;
       --muted: 220 14.3% 95.9%;
       --muted-foreground: 220 8.9% 46.1%;
@@ -29,6 +29,8 @@
       --input: 220 13% 91%;
       --ring: 262.1 83.3% 57.8%;
       --radius: 0.5rem;
+      --footer:225 10% 92%;
+      --footer-foreground:0 0% 0%;
     }
 
     .dark {
@@ -51,6 +53,10 @@
       --border: 215 27.9% 16.9%;
       --input: 215 27.9% 16.9%;
       --ring: 263.4 70% 50.4%;
+      --footer:221 87% 6%;
+      --footer-foreground:0 0% 100%;
+
+
     }
   }
 
@@ -94,7 +100,53 @@
 }
 
 .section-title {
-  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3
+  @apply text-3xl md:text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 mb-12 xl:mb-16 text-center mx-auto text-primary  font-general_font border-b-2 border-primary/50  
+}
+.section-logo{
+  @apply text-[2.5rem] md:text-5xl text-primary drop-shadow-lg
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
+  @apply bg-primary;
 }
 
 
+
+
+@media (max-width: 420px) {
+  .tablist {
+    @apply flex-col h-full bg-transparent gap-y-5
+  }
+  .trigger{
+    @apply py-[.3rem] 
+  }
+}
+
+@keyframes wave {
+  0%, 25%, 100% {
+    transform: rotate(45deg);
+  }
+  12.5%, 37.5% {
+    transform: rotate(0deg);
+  }
+}
+.animate-wave {
+  animation: wave 1.5s  ease-in-out infinite ;
+}
+
+@keyframes shake {
+  0%, 100% {
+    
+    transform: translateX(0);
+  }
+  12.5%, 37.5% {
+    transform: translateX(-2px); /* Move to the left */
+  }
+  62.5%, 87.5% {
+    transform: translateX(2px); /* Move to the right */
+  }
+}
+
+.animate-shake {
+  animation: shake 1s ease-in-out infinite;
+}

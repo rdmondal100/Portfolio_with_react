@@ -1,5 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { aboutImg } from "@/assets";
+import { BiMerge } from "react-icons/bi";
+
 import {
 	User2,
 	MailIcon,
@@ -123,16 +125,19 @@ const About = () => {
 	return (
 		<section className="   pb-12 xl:py-24 relative top-0 ">
 			<div className=" px-3 md:container mx-auto   ">
-				<h2 className="section-title mb-8 xl:mb-16 text-center mx-auto text-primary/90  font-general_font ">
-					About me
-				</h2>
+			<div className="section-title">
+
+<BiMerge className="section-logo" />
+
+<h2 className=" ">About Me</h2>
+</div>
 				<div className="info w-full flex flex-col md:flex-row">
 					{/* img  */}
 					<div className=" hidden lg:flex md:w-2/4 ">
 						<img src={aboutImg} alt="" className=" w-72  xl:w-96" />
 					</div>
 					{/* tabs */}
-					<div className=" flex-1 gap-6  md:w-2/4 w-full justify-center h-full">
+					<div className=" flex-1 gap-6  md:w-2/4 w-full justify-center h-full ">
 						<Tabs defaultValue="personal">
 							<TabsList className="flex justify-between xl:h-12  font-general_font ">
 								<TabsTrigger
@@ -158,16 +163,16 @@ const About = () => {
 							<div className="text-lg mt-12 xl:mt-8 text-foreground font-general_font">
 								<TabsContent value="personal">
 									<div className="personal">
-										<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl text-center">
+										<h3 className=" md:text-left text-accent-foreground font-heading_font text-2xl xl:text-3xl text-center">
 											"Bringing Designs to Life, Code by Code"
 										</h3>
-										<p className=" md:text-left text-center text-secondary-foreground/90 font-general_font mb-8">
+										<p className=" md:text-left text-center text-secondary-foreground/90 font-general_font mb-8 text-lg xl:text-xl mt-3">
 											Wave the canvas, and I am the artist. I delight
 											in painting the canvas with code, creating
 											masterpieces for you.
 										</p>
 										{/* icon  */}
-										<div className="  grid lg:grid-cols-2 gap-4 mb-12  font-general_font mt-12 ">
+										<div className="  grid lg:grid-cols-2 gap-4 mb-12  font-general_font mt-12 text-lg xl:text-[1.2rem] ">
 											{infoData.map((item, index) => {
 												return (
 													<div
@@ -186,11 +191,11 @@ const About = () => {
 										</div>
 										{/* language */}
 										<div className="flex flex-col font-general_font">
-											<div className=" text-primary text-xl mx-auto md:mx-0 pb-1">
+											<div className=" text-primary text-2xl mx-auto md:mx-0 pb-1">
 												Language I Speak
 											</div>
 											<div className="border-b border-border "></div>
-											<div className=" mx-auto md:mx-0 text-foreground text-base mt-3">
+											<div className=" mx-auto md:mx-0 text-foreground text-lg mt-3 ">
 												English | Bangla | Hindi
 											</div>
 										</div>
