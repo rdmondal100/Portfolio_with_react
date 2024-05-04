@@ -36,15 +36,25 @@ const ProjectCard = ({ project, cardStyles }) => {
                 </p>
             </CardDescription>
             <CardFooter className='flex justify-between border-t-[.1px] border-secondary rounded-md pt-3  text-secondary-foreground '>
-                <Link to={'/'} className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '>
+                <Link
+                    to={"/"}
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                >
                     <LuExternalLink />
                     <span className='text-[.7rem]'>Live site</span>
                 </Link>
-                <Link to={'https://github.com/rdmondal100'} target="_blank" className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '>
+                <Link
+                    to={"https://github.com/rdmondal100"}
+                    target='_blank'
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                >
                     <TbSourceCode />
                     <span className='text-[.7rem]'> Source code</span>
                 </Link>
-                <Link to={'/'} className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '>
+                <Link
+                    to={"/"}
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                >
                     <TbDetails />
                     <span className='text-[.7rem]'> Details</span>{" "}
                 </Link>
