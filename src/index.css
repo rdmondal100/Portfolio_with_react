@@ -112,7 +112,6 @@
 
 
 
-
 @media (max-width: 420px) {
   .tablist {
     @apply flex-col h-full bg-transparent gap-y-5
@@ -145,6 +144,22 @@
   62.5%, 87.5% {
     transform: translateX(2px); /* Move to the right */
   }
+}
+@keyframes pulse {
+  0% {
+    
+    color: var(--foreground);
+  }
+  25%, 50%{
+    color: green; /* Move to the left */
+  }
+  100% {
+    color: var(--foreground);
+  }
+}
+
+.animate-live-link{
+  animation: pulse 5s ease-in-out infinite;
 }
 
 .animate-shake {

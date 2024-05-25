@@ -5,6 +5,7 @@ import Blogs from "./pages/Blogs.jsx";
 import Contact from "./pages/Contact.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
 import { useEffect } from "react";
+import ProjectDetails from "./components/ProjectDetails.jsx";
 
 function App() {
     const { pathname } = useLocation();
@@ -26,7 +27,10 @@ function App() {
         <Routes>
             <Route element={<RootLayout />}>
                 <Route index element={<Home />} />
-                <Route path='/projects' element={<Projects />} />
+                <Route path='projects'>
+                    <Route index element={<Projects />} />
+                    <Route path=':id/:slug' element={<ProjectDetails />} />
+                </Route>
                 <Route path='/blogs' element={<Blogs />} />
                 <Route path='/contact' element={<Contact />} />
             </Route>

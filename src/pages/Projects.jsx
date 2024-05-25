@@ -5,61 +5,14 @@ import { useState } from "react";
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import ProjectCard from "@/components/ProjectCard";
 import { BiMerge } from "react-icons/bi";
-import { w1, w2, w3, w4 } from "@/assets"
-const projectData = [
-  {
-    image: w1,
-    category: 'react js',
-    name: "Nex Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: w4,
-    category: 'vanila js',
-    name: "Hotel Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: w1,
-    category: 'react js',
-    name: "Hospital Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: w2,
-    category: 'next js',
-    name: "Gym Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: w3,
-    category: 'react js',
-    name: "School Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-  {
-    image: w4,
-    category: 'next js',
-    name: "Ecommerce Website",
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-    link: '/',
-    github: '/'
-  },
-]
+import useProjectList from "@/hooks/useProjectList";
 
-const uniqueCategories = ["all projects", ...new Set(projectData.map((item) => item.category))];
+
+
 
 const Projects = () => {
+  const {projectData}=useProjectList()
+  const uniqueCategories = ["all projects", ...new Set(projectData.map((item) => item.category))];
   const [categories] = useState(uniqueCategories);
   const [category, setCategory] = useState('all projects');
 

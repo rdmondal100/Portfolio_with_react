@@ -7,7 +7,7 @@ import { TbSourceCode, TbDetails } from "react-icons/tb";
 const ProjectCard = ({ project, cardStyles }) => {
     console.log(project);
 
-    const { image, name, category, description, github, link } = project;
+    const { image, name, category, description, github, link , id} = project;
 
     return (
         <Card
@@ -17,43 +17,43 @@ const ProjectCard = ({ project, cardStyles }) => {
                 {category}
             </Badge>
             <CardHeader className='p-0'>
-                <div className=' relative pt-[37px] flex w-full justify-center items-center bg-primary/10   overflow-hidden'>
+                <div className=' relative pt-[37px] flex w-full justify-center items-center bg-primary/10   overflow-hidden px-16'>
                     <img
                         src={image}
                         alt=''
-                        height={250}
-                        width={247}
-                        className=' shadow-xl shadow-primary/20'
+                        
+                        className=' shadow-xl shadow-primary/20 rounded-t-lg'
                     />
                 </div>
             </CardHeader>
-            <CardDescription className=' h-full px-8 py-6 '>
+            <CardDescription className=' h-[11rem] px-8 py-6 '>
                 <h4 className=' text-2xl font-heading_font text-foreground/95 mb-1'>
                     {name}
                 </h4>
-                <p className=' text-muted-foreground text-lg  '>
-                    {description}
-                </p>
+                <div className=' text-muted-foreground text-lg overflow-hidden line-clamp-3' dangerouslySetInnerHTML={{ __html: project.description }} >
+                
+                </div>
             </CardDescription>
             <CardFooter className='flex justify-between border-t-[.1px] border-secondary rounded-md pt-3  text-secondary-foreground '>
-                <Link
-                    to={"/"}
-                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                <a
+                    href={link}
+                    target="_blank"
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font hover:text-primary'
                 >
                     <LuExternalLink />
                     <span className='text-[.7rem]'>Live site</span>
-                </Link>
-                <Link
-                    to={"https://github.com/rdmondal100"}
+                </a>
+                <a
+                    href={"https://github.com/rdmondal100"}
                     target='_blank'
-                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font hover:text-primary'
                 >
                     <TbSourceCode />
                     <span className='text-[.7rem]'> Source code</span>
-                </Link>
+                </a>
                 <Link
-                    to={"/"}
-                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font '
+                    to={`/projects/${id}/${name}`}
+                    className='cursor-pointer flex flex-col items-center justify-center gap-y-[1px]  font-general_font hover:text-primary'
                 >
                     <TbDetails />
                     <span className='text-[.7rem]'> Details</span>{" "}
