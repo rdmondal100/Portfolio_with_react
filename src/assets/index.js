@@ -1,5 +1,6 @@
-import riday from "../assets/riday.svg";
-import aboutImg from "../assets/aboutImg.svg"
+import riday from "../assets/Riday mondal - expert react web developer, front-end developer.png";
+import riday_default from "../assets/Riday mondal- react front-end developer , Profile.png";
+import aboutImg from "../assets/aboutImg.jpeg"
 import w1 from'../assets/work/Responsive blog websites using react js and redux toolkit.jpg'
 import w2 from'../assets/work/convert psd into react js education website.jpg'
 import w3 from'../assets/work/E-commerce website using react js.jpg'
@@ -18,6 +19,7 @@ import avater6 from '../assets/reviews/avatar-6.png'
 import conIllustration from '../assets/contact/1.svg'
 export {
   riday,
+  riday_default,
   aboutImg,
   portfolio,
   socialMedia_sociallife,

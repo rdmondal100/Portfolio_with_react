@@ -3,11 +3,12 @@ import { Card, CardHeader, CardFooter, CardDescription } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { LuExternalLink } from "react-icons/lu";
 import { TbSourceCode, TbDetails } from "react-icons/tb";
+import BlurhashImage from "./BlurhashImage";
 
 const ProjectCard = ({ project, cardStyles }) => {
     console.log(project);
 
-    const { image, name, category, description, github, link , id} = project;
+    const { image, name, category, description, github, link , id,blurhash} = project;
 
     return (
         <Card
@@ -18,11 +19,12 @@ const ProjectCard = ({ project, cardStyles }) => {
             </Badge>
             <CardHeader className='p-0'>
                 <div className=' relative pt-[37px] flex w-full justify-center items-center bg-primary/10   overflow-hidden px-16'>
-                    <img
+                    <BlurhashImage
                         src={image}
+                        blurhash={blurhash}
                         alt=''
                         
-                        className=' shadow-xl shadow-primary/20 rounded-t-lg'
+                        className=' shadow-xl shadow-primary/20 rounded-t-lg w-full h-full'
                     />
                 </div>
             </CardHeader>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 
 import { LuExternalLink } from "react-icons/lu";
 import { TbSourceCode } from "react-icons/tb";
+import BlurhashImage from "./BlurhashImage";
 
 const ProjectDetails = () => {
   const {id}=useParams()
@@ -14,7 +15,7 @@ const ProjectDetails = () => {
       mt-16 px-6 md:px-8 lg:px-10 xl:px-12 lg:gap-x-10">
 
       <div className="image  flex justify-center rounded-lg items-start">
-        <img src={project.image} alt=""  className=" rounded-lg w-full max-h-[1200px] max-w-[1600px] object-contain"/>
+        <BlurhashImage src={project?.image} blurhash={project?.blurhash} alt=""  className=" rounded-lg w-full max-h-[1200px] max-w-[1600px] object-contain"/>
       </div>
 
       <div className="details ">

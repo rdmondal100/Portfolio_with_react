@@ -14,6 +14,7 @@ import {
 import { TbBrandVscode } from "react-icons/tb";
 import { FaGit } from "react-icons/fa";
 import { CgFigma } from "react-icons/cg";
+import BlurhashImage from "./BlurhashImage";
 
 const infoData = [
 	{
@@ -133,8 +134,9 @@ const About = () => {
 </div>
 				<div className="info w-full flex flex-col md:flex-row">
 					{/* img  */}
-					<div className=" hidden lg:flex md:w-2/4 ">
-						<img src={aboutImg} alt="" className=" w-72  xl:w-96" />
+					<div className=" hidden lg:flex md:w-2/4 rounded-lg pr-10 py-2">
+
+						<BlurhashImage src={aboutImg} blurhash="LHGlCm8_?u00~qD*t7xuxuROxvt8" className=" h-fit  rounded-lg w-full " alt="riday_mondal_aboutImage"/>
 					</div>
 					{/* tabs */}
 					<div className=" flex-1 gap-6  md:w-2/4 w-full justify-center h-full ">

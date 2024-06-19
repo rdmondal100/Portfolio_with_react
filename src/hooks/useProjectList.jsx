@@ -7,17 +7,20 @@ const useProjectList = () => {
       image: socialMedia_sociallife,
       category: 'react js',
       name: "Social Media",
+      blurhash:"LDBMMos=EL~CJS=|^+Ef-pX8Naxa",
       description: "It's a social media application build with React JS, Tailwind CSS, Redux-toolkit, Appwrite (Back-end as a service), Shadcn, Zod(for form validation), and more",
       link: 'https://sociallife-delta.vercel.app/',
-      github: '/',
+      github: 'https://github.com/rdmondal100/social-media-with-react-js',
       id:"1"
     },{
       image: portfolio,
       category: 'react js',
       name: "Portfolio Website",
+      blurhash:"L68|-X00?c^+xuWlk7Sd01~pn,V|",
+
       description: "It's a developer portfolio website that is build with react js and tailwind. I used my front-end development skills to build this mobile-friendly responsive website",
       link: 'https://rdmondal.tech',
-      github: '/',
+      github: 'https://github.com/rdmondal100/Portfolio_with_react',
       id:"2"
   
     },
@@ -25,9 +28,10 @@ const useProjectList = () => {
       image: w1,
       category: 'next js',
       name: "News Blog Website",
+      blurhash:"LLDJ9e%2~pIn_N%hNGS6_3%LRiV?",
       description: 'This is a new blog website, buid with Next JS, Tailwind CSS and more. I have build this site to showcase my skills in web development or front-end development.',
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"3"
   
     },
@@ -35,9 +39,10 @@ const useProjectList = () => {
       image: w2,
       category: 'react js',
       name: "Education Website",
+      blurhash:"LaPsw?_LNZMxs8n+fkoL?^IBWAxu",
       description: 'This is an education website where students and other users can access various details about educational institutions. The site provides comprehensive information on academic curriculums, including course offerings, program structures, and syllabi. Users can also find details on faculty members, admission requirements, campus facilities, extracurricular activities, and upcoming events. Additionally, the website features resources such as study materials, examination schedules, and results. Whether you are a prospective student, current student, or educator, this platform offers valuable insights to help you navigate and succeed in your educational journey.',
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"4"
   
     },
@@ -45,9 +50,10 @@ const useProjectList = () => {
       image: w3,
       category: 'react js',
       name: "E-commerce Website",
+      blurhash:"L6P?]w.SIwVu1jDis%XN}T%NICoh",
       description: "As a React developer, I built this eCommerce website with a focus on performance, scalability, and user experience. Utilizing React's component-based architecture, the website offers a seamless and dynamic shopping experience for users. ",
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"5"
   
     },
@@ -55,9 +61,10 @@ const useProjectList = () => {
       image: w4,
       category: 'next js',
       name: "Business Website",
+      blurhash:"LFDe0K~VRo01TGE0xH?IIbIq%1-o",
       description: 'As a developer, I created this business website to feature an innovative Plant App and provide a comprehensive resource center for the users. The website is built with a focus on user experience, performance, and accessibility, leveraging modern web development technologies.',
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"6"
   
     },
@@ -65,6 +72,7 @@ const useProjectList = () => {
       image: w5,
       category: 'vanilla js',
       name: "Generall Blog Website",
+      blurhash:"L9NAn}D+pJ~q0001-U9E9E-oIA%g",
       description: `<p>I developed a blog website using vanilla JavaScript and CSS. The site features a clean, responsive design with a user-friendly interface. Key components include:</p>
 
       <ul>
@@ -77,15 +85,16 @@ const useProjectList = () => {
       
       <p>This project highlights my skills in front-end web development, demonstrating my ability to create functional, dynamic web applications using only HTML, CSS, and JavaScript.</p>
       `,
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"7"
   
     },
     {
       image: w6,
       category: 'react js',
-      name: "Ecommerce Website",
+      name: "Professional Business Website",
+      blurhash:"L4QJiwy40I4T9Ltkxo01TA02x+_M",
       description: `<div class="desc mt-5">
       <p>I designed and developed a professional business website using Tailwind CSS, HTML, and React.js. This website offers a sleek and modern interface tailored to showcase the unique offerings of the business.</p>
     
@@ -111,8 +120,8 @@ const useProjectList = () => {
       </p>
     </div>
     `,
-      link: '/',
-      github: '/',
+      link: '#',
+      github: '#',
       id:"8"
   
     },
