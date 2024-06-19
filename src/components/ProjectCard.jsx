@@ -17,14 +17,14 @@ const ProjectCard = ({ project, cardStyles }) => {
             <Badge className='uppercase text-sm  font-medium mb-2 absolute mt-1 ml-1 '>
                 {category}
             </Badge>
-            <CardHeader className='p-0'>
-                <div className=' relative pt-[37px] flex w-full justify-center items-center bg-primary/10   overflow-hidden px-16'>
+            <CardHeader className='p-0 '>
+                <div className=' relative pt-[37px] flex w-full h-full justify-center items-center bg-primary/10   overflow-hidden px-16'>
                     <BlurhashImage
                         src={image}
                         blurhash={blurhash}
-                        alt=''
-                        
-                        className=' shadow-xl shadow-primary/20 rounded-t-lg w-full h-full'
+                        height={100}
+                        alt={name}
+                        className=' shadow-xl shadow-primary/20 rounded-t-lg w-full'
                     />
                 </div>
             </CardHeader>

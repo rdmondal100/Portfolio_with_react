@@ -11,7 +11,7 @@ const BlurhashImage = ({ src, blurhash, alt = '', height, width,className }) => 
           hash={blurhash}
           height={height}
           width={width}
-          className={` ${className}`}
+          className={`${className}`}
           punch={1}
         />
       )}
