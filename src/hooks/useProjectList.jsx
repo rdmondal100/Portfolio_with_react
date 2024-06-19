@@ -93,7 +93,7 @@ const useProjectList = () => {
     {
       image: w6,
       category: 'react js',
-      name: "Professional Business Website",
+      name: "Business Website",
       blurhash:"L4QJiwy40I4T9Ltkxo01TA02x+_M",
       description: `<div class="desc mt-5">
       <p>I designed and developed a professional business website using Tailwind CSS, HTML, and React.js. This website offers a sleek and modern interface tailored to showcase the unique offerings of the business.</p>
