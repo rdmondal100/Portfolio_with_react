@@ -156,7 +156,7 @@ Error generating stack: `+s.message+`
       </ul>
       
       <p>This project highlights my skills in front-end web development, demonstrating my ability to create functional, dynamic web applications using only HTML, CSS, and JavaScript.</p>
-      `,link:"#",github:"#",id:"7"},{image:q3,category:"react js",name:"Professional Business Website",blurhash:"L4QJiwy40I4T9Ltkxo01TA02x+_M",description:`<div class="desc mt-5">
+      `,link:"#",github:"#",id:"7"},{image:q3,category:"react js",name:"Business Website",blurhash:"L4QJiwy40I4T9Ltkxo01TA02x+_M",description:`<div class="desc mt-5">
       <p>I designed and developed a professional business website using Tailwind CSS, HTML, and React.js. This website offers a sleek and modern interface tailored to showcase the unique offerings of the business.</p>
     
       <p>Key features of the website include:</p>
