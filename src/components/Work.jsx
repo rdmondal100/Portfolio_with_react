@@ -10,59 +10,12 @@ import 'swiper/css/pagination'
 
 import ProjectCard from "./ProjectCard"
 import { BiMerge } from "react-icons/bi";
+import useProjectList from "@/hooks/useProjectList"
 
 
 const Work = () => {
-  const projectData = [
-    {
-      image: w1,
-      category: 'react js',
-      name: "Nex Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-    {
-      image: w4,
-      category: 'vanila js',
-      name: "Hotel Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-    {
-      image: w1,
-      category: 'react js',
-      name: "Hospital Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-    {
-      image: w2,
-      category: 'next js',
-      name: "Gym Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-    {
-      image: w3,
-      category: 'react js',
-      name: "School Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-    {
-      image: w4,
-      category: 'next js',
-      name: "Ecommerce Website",
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, totam? Ex, assumenda.',
-      link: '/',
-      github: '/'
-    },
-  ]
+  const {projectData}=useProjectList()
+
   return (
     <section className=" xl:flex relative xl:h-[500px] xl:mb-20 mb-12 text-foreground z-0">
       <div className=" px-2   w-full flex flex-col xl:flex-row ">

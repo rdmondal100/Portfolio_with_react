@@ -26,10 +26,11 @@ const Contact = () => {
                                 Let's Work Together.
                             </h1>
                         
-                       
-                            <p className=' max-w-[400px] text-muted-foreground'>
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Lorem ipsum dolor sit amet.
+                      
+                            <p className=' max-w-[400px] text-muted-foreground mt-4'>
+                          Have a project in mind? Let's collaborate and create something amazing. Contact me Now!
+
+
                             </p>
                       
                     </div>

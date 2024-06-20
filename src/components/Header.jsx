@@ -40,7 +40,7 @@ const Header = () => {
                 header
                     ? "py-1    backdrop-blur-sm shadow-lg "
                     : " bg-transparent "
-            } lg:pt-2 sticky top-0 z-50 transition-all `}
+            } lg:pt-2 sticky top-0 z-50 transition-all px-8`}
         >
             <div className='h-12 flex px-2 mx-auto'>
                 <div className='flex justify-between items-center w-full'>
