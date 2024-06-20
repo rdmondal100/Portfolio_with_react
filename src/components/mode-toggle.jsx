@@ -3,7 +3,7 @@ import { Sun } from 'lucide-react';
 import { BsMoonStarsFill } from 'react-icons/bs';
 import { Button } from '@/components/ui/button';
 
-export function ModeToggle() {
+export function ModeToggle({className}) {
   const [currentTheme, setCurrentTheme] = useState('');
 
   useEffect(() => {
@@ -22,9 +22,9 @@ export function ModeToggle() {
 
   return (
     <Button
-      variant="icon"
-      size="icon"
-      className="xl:w-10 xl:h-10"
+      variant="outline"
+      size="outline"
+      className={className}
       onClick={handleToggleTheme}
     >
       <Sun className={`h-[1.2rem] w-[1.2rem] text-primary rotate-0 scale-100 transition-all ${currentTheme === 'dark' ? 'dark:-rotate-90 dark:scale-0' : ''}`} />

@@ -38,9 +38,9 @@ const Header = () => {
         <header
             className={`${
                 header
-                    ? "py-1    backdrop-blur-sm shadow-lg "
-                    : " bg-transparent "
-            } lg:pt-2 sticky top-0 z-50 transition-all px-8`}
+                    ? "py-2   backdrop-blur-sm shadow-lg "
+                    : " bg-transparent pt-1"
+            } lg:pt-2 sticky top-0 z-50 transition-all lg:px-8 px-2 md:px-3`}
         >
             <div className='h-12 flex px-2 mx-auto'>
                 <div className='flex justify-between items-center w-full'>
@@ -61,17 +61,13 @@ const Header = () => {
                                 <Button
                                     size='icon'
                                     variant='outline'
-                                    className={`${
-                                        item.name == "themeToggle"
-                                            ? "relative bottom-1"
-                                            : ""
-                                    } text-secondary-foreground w-9 h-9 xl:w-10 xl:h-10  text-xl md:text-2xl xl:text-3xl cursor-pointer `}
+                                    className={` text-secondary-foreground w-9 h-9 xl:w-10 xl:h-10  text-xl md:text-2xl xl:text-3xl cursor-pointer `}
                                 >
                                     {item.icons}
                                 </Button>
                             </Link>
                         ))}
-                        <ModeToggle className='xl:w-12 xl:h-12' />
+                        <ModeToggle className='text-secondary-foreground w-9 h-9 xl:w-10 xl:h-10  text-xl md:text-2xl xl:text-3xl cursor-pointer ' />
                     </div>
                 </div>
                 {/* mobile menu  */}
