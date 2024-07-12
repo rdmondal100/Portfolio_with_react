@@ -9,7 +9,7 @@ const useProjectList = () => {
       image: figmaToLandigPage_1,
       category: 'react js',
       name: "Figma to Landing Page",
-      blurhash:"LDBMMos=EL~CJS=|^+Ef-pX8Naxa",
+      blurhash:"L8R3i-%y4-Ev1D00~XIn00-:ICxu",
       description: "This is a landing page created with React.Js, Tailwind CSS, HTML, CSS. This was converted from a figma design. ",
       link: 'https://nexcent-umber.vercel.app/',
       github: 'https://github.com/rdmondal100/landing-page-uisng-react-js',
