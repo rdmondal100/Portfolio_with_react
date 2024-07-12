@@ -42,7 +42,7 @@ const Projects = () => {
             {/* Tabs content */}
             <div className="xl:mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 place-items-center mt-5 md:mt-7">
               {filteredProjects.map((project) => (
-                <ProjectCard key={project.name} cardStyles="max-w-full" project={project} />
+                <ProjectCard key={project.name} cardStyles="max-w-full" project={project} className="transition-all duration-500 ease-in-out" />
               ))}
             </div>
           </Tabs>

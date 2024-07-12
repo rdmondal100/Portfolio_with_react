@@ -78,7 +78,7 @@ const Reviews = () => {
                 <SwiperSlide key={index} className=" mb-10 ">
                   <div className=" w-full flex justify-center items-center">
 
-                    <Card className='border-primary/20 px-8 py-2 min-h-[300px]  max-w-[400px] shadow-lg shadow-primary/10 m-3'>
+                    <Card className='border-primary/10 px-8 py-2 min-h-[300px]  max-w-[400px] shadow-lg shadow-primary/10 m-3 bg-secondary/20 hover:scale-105 transition-all duration-150'>
                       <CardHeader>
                         <div className="flex items-center gap-x-4">
                           <img src={avatar} alt="" width={70} height={70} />

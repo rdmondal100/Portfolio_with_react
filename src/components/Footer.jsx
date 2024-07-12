@@ -2,7 +2,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
     return (
-        <footer className=' bg-footer-background py-12 lg:pb-2  border-solid  rounded-md'>
+        <footer className=' bg-secondary/20 py-12 lg:pb-2  border-solid  rounded-md'>
             <div className=' mx-auto my-3'>
                 <div className=''>
                     <Socials

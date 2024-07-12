@@ -15,7 +15,6 @@ const Header = () => {
         });
         return () => window.removeEventListener("scroll", scrollYProg);
     }, []);
-    console.log(header);
     const socialIcons = [
         {
             name: "twiteer",
@@ -40,7 +39,7 @@ const Header = () => {
                 header
                     ? "py-2   backdrop-blur-sm shadow-lg "
                     : " bg-transparent pt-1"
-            } lg:pt-2 sticky top-0 z-50 transition-all lg:px-8 px-2 md:px-3`}
+            } lg:pt-2 sticky top-0 z-50 transition-all lg:px-8 px-2 md:px-3 `}
         >
             <div className='h-12 flex px-2 mx-auto'>
                 <div className='flex justify-between items-center w-full'>

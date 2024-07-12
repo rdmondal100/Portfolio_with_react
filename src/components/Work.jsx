@@ -21,13 +21,13 @@ const Work = () => {
       <div className=" px-2   w-full flex flex-col xl:flex-row ">
 
         <div className="flex justify-center items-center flex-col  py-4 xl:w-[30%]">
-        <div className="section-title ">
+        <div className="section-title xl:mb-10">
 
 <BiMerge className="section-logo" />
 
 <h2 className=" ">Latest Projects</h2>
 </div>
-          <p className=" pb-6 text-center xl:text-xl text-lg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quasi?</p>
+          <p className=" pb-6 text-center xl:text-lg  text-md pl-5  leading-[2rem] text-foreground/90">Create your modern optimized websites with React.js, HTML, CSS, JavaScript, and Tailwind CSS. Features include a modern interface, intuitive navigation, speed-loading, fully customizations and more. Optimized for cross-browser compatibility and performance on all devices. </p>
           <Link to={'/projects'}>
             <Button className='text-lg'>All Projects</Button>
           </Link>

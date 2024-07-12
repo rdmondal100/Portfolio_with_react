@@ -7,8 +7,10 @@ import BlurhashImage from "./BlurhashImage";
 
 const ProjectDetails = () => {
     const { id } = useParams();
+    console.log(id)
     const { projectData } = useProjectList();
-    const project = projectData.filter((project) => project.id === id)[0];
+    console.log(projectData)
+    const project = projectData.filter((project) =>id == project?.id)[0];
     console.log(project);
     return (
         <div

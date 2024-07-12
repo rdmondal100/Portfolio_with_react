@@ -80,7 +80,7 @@ export const MobileMenueBar = ({mobileTopLine}) => {
 	console.log(currentPath);
 
 	return (
-		<div className=" rounded-t-md list-none fixed bottom-0 flex justify-between items-center w-full px-8 h-14 md:h-14  backdrop-blur-sm lg:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10 ">
+		<div className=" rounded-t-md list-none fixed bottom-0 flex justify-between items-center w-full px-8 h-14 md:h-14 bg-secondary/50  backdrop-blur-md lg:hidden  text-muted-foreground pb-4 border-t-[.01rem] border-t-foreground/10 ">
 			{navItems.map((item) => (
 				<li
 					key={item.slug}

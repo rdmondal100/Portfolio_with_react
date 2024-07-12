@@ -46,7 +46,7 @@ const Services = () => {
                         return (
                             <Card
                                 key={index}
-                                className="w-full max-w-[424px] h-[300px] flex-col pt-16 pb-10 justify-center items-center bg-background  relative border-primary/20 shadow-lg m-3 shadow-primary/10"
+                                className="w-full max-w-[424px] h-[300px] flex-col pt-16 pb-10 justify-center items-center bg-background  relative border-primary/20 shadow-lg m-3 shadow-secondary/30 hover:shadow-secondary/50"
                             >
                                 <CardHeader className=" text-primary absolute -top-12 w-full justify-center flex items-center ">
                                     <div

@@ -1,8 +1,20 @@
-import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6 } from "@/assets"
+import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6, figmaToLandigPage_1 } from "@/assets"
+import { useId } from "react"
 
 const useProjectList = () => {
+  
 
   const projectData = [
+    {
+      image: figmaToLandigPage_1,
+      category: 'react js',
+      name: "Figma to Landing Page",
+      blurhash:"LDBMMos=EL~CJS=|^+Ef-pX8Naxa",
+      description: "This is a landing page created with React.Js, Tailwind CSS, HTML, CSS. This was converted from a figma design. ",
+      link: 'https://nexcent-umber.vercel.app/',
+      github: 'https://github.com/rdmondal100/landing-page-uisng-react-js',
+      id:9
+    },
     {
       image: socialMedia_sociallife,
       category: 'react js',
@@ -11,8 +23,9 @@ const useProjectList = () => {
       description: "It's a social media application build with React JS, Tailwind CSS, Redux-toolkit, Appwrite (Back-end as a service), Shadcn, Zod(for form validation), and more",
       link: 'https://sociallife-delta.vercel.app/',
       github: 'https://github.com/rdmondal100/social-media-with-react-js',
-      id:"1"
-    },{
+      id:8
+    }
+    ,{
       image: portfolio,
       category: 'react js',
       name: "Portfolio Website",
@@ -21,7 +34,7 @@ const useProjectList = () => {
       description: "It's a developer portfolio website that is build with react js and tailwind. I used my front-end development skills to build this mobile-friendly responsive website",
       link: 'https://rdmondal.tech',
       github: 'https://github.com/rdmondal100/Portfolio_with_react',
-      id:"2"
+      id:7
   
     },
     {
@@ -32,7 +45,7 @@ const useProjectList = () => {
       description: 'This is a new blog website, buid with Next JS, Tailwind CSS and more. I have build this site to showcase my skills in web development or front-end development.',
       link: '#',
       github: '#',
-      id:"3"
+      id:6
   
     },
     {
@@ -43,7 +56,7 @@ const useProjectList = () => {
       description: 'This is an education website where students and other users can access various details about educational institutions. The site provides comprehensive information on academic curriculums, including course offerings, program structures, and syllabi. Users can also find details on faculty members, admission requirements, campus facilities, extracurricular activities, and upcoming events. Additionally, the website features resources such as study materials, examination schedules, and results. Whether you are a prospective student, current student, or educator, this platform offers valuable insights to help you navigate and succeed in your educational journey.',
       link: '#',
       github: '#',
-      id:"4"
+      id:5
   
     },
     {
@@ -54,7 +67,7 @@ const useProjectList = () => {
       description: "As a React developer, I built this eCommerce website with a focus on performance, scalability, and user experience. Utilizing React's component-based architecture, the website offers a seamless and dynamic shopping experience for users. ",
       link: '#',
       github: '#',
-      id:"5"
+      id:4
   
     },
     {
@@ -65,7 +78,7 @@ const useProjectList = () => {
       description: 'As a developer, I created this business website to feature an innovative Plant App and provide a comprehensive resource center for the users. The website is built with a focus on user experience, performance, and accessibility, leveraging modern web development technologies.',
       link: '#',
       github: '#',
-      id:"6"
+      id:3
   
     },
     {
@@ -87,7 +100,7 @@ const useProjectList = () => {
       `,
       link: '#',
       github: '#',
-      id:"7"
+      id:2
   
     },
     {
@@ -122,7 +135,7 @@ const useProjectList = () => {
     `,
       link: '#',
       github: '#',
-      id:"8"
+      id:1
   
     },
   ]

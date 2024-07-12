@@ -12,13 +12,13 @@ const ProjectCard = ({ project, cardStyles }) => {
 
     return (
         <Card
-            className={`border-primary/20 overflow-hidden shadow-lg max-w-[400px] m-3 shadow-primary/10 ${cardStyles}`}
+            className={`border-primary/5 overflow-hidden shadow-lg max-w-[400px] m-3 shadow-secondary/20 transition-all duration-300 ease-in-out ${cardStyles} bg-secondary/20  hover:scale-[.99]`}
         >
             <Badge className='uppercase text-sm  font-medium mb-2 absolute mt-1 ml-1 '>
                 {category}
             </Badge>
             <CardHeader className='p-0 '>
-                <div className=' relative pt-[37px] flex w-full h-full justify-center items-center bg-primary/10   overflow-hidden px-16'>
+                <div className=' relative pt-[37px] flex w-full h-full justify-center items-center bg-primary/5   overflow-hidden px-16'>
                     <BlurhashImage
                         src={image}
                         blurhash={blurhash}
