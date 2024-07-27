@@ -11,7 +11,7 @@ const useProjectList = () => {
       name: "Ai Article Summerizer",
       blurhash:"L8Q,gry=Twy.1VX2w0St2}X2n9WB",
       description: "This is a ai tool that can summerize any article by using their link. You have to just put the link and hit Enter and then get the summerized article",
-      link: 'https://ai-article-summerizer-lr9paiowg-riday-mondals-projects.vercel.app/',
+      link: 'https://aiarticle-summerizer.vercel.app/',
       github: 'https://github.com/rdmondal100/ai-article-summerizer',
       id:10
     },
