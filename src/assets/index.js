@@ -9,6 +9,7 @@ import portfolio from '../assets/work/Personal Portfolio Website Using React Js 
 import socialMedia_sociallife from '../assets/work/Social Media Application Using React JS, Redux-toolkit, Tailwind CSS, AppWrite and more.jpg'
 import w5 from '../assets/work/Engaging blog websites using react js.jpg'
 import figmaToLandigPage_1 from '../assets/work/convert figma landing page design uisng reactJs and tailwind css.jpg'
+import aiArticleSummerizer from '../assets/work/create ai article summerizer uisng open ai api and react js.jpg'
 import w6 from '../assets/work/Optimized business website using react js.jpg'
 
 import avater1 from '../assets/reviews/avatar-1.png'
@@ -37,6 +38,7 @@ export {
   avater5,
   avater6,
   conIllustration,
-  figmaToLandigPage_1
+  figmaToLandigPage_1,
+  aiArticleSummerizer
   
 }

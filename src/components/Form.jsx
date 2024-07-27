@@ -134,11 +134,12 @@ const Form = () => {
                 )}
 
                 <Button
-                    className={`font-aclonica flex gap-x-2 text-lg ${
+                    className={`font-aclonica flex gap-x-2 text-lg btn ${
                         loading && " animate-pulse"
                     } overflow-hidden`}
                     type='submit'
                 >
+                    <span className=" flex gap-2 items-center justify-center btn_span">
                     {loading && <SiSendinblue className='animate-spin' />}{" "}
                     Let's Talk{" "}
                     <LuSendHorizonal
@@ -146,6 +147,8 @@ const Form = () => {
                             submitted && "  translate-x-full duration-500 w-full"
                         }  ${loading && " ml-5 animate-shake"}`}
                     />
+                    </span>
+                 
                 </Button>
             </form>
            

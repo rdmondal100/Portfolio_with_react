@@ -29,8 +29,8 @@
       --input: 220 13% 91%;
       --ring: 262.1 83.3% 57.8%;
       --radius: 0.5rem;
-      --footer:225 10% 92%;
-      --footer-foreground:0 0% 0%;
+      --footer: 225 10% 92%;
+      --footer-foreground: 0 0% 0%;
     }
 
     .dark {
@@ -54,8 +54,8 @@
       --border: 215 27.9% 16.9%;
       --input: 215 27.9% 16.9%;
       --ring: 263.4 70% 50.4%;
-      --footer:221 87% 6%;
-      --footer-foreground:0 0% 100%;
+      --footer: 221 87% 6%;
+      --footer-foreground: 0 0% 100%;
 
 
     }
@@ -101,13 +101,14 @@
 }
 
 .section-title {
-  @apply text-3xl md:text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 mb-12 xl:mb-16 text-center mx-auto text-primary  font-general_font border-b-2 border-primary/50  
+  @apply text-3xl md:text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 mb-12 xl:mb-16 text-center mx-auto text-primary font-general_font border-b-2 border-primary/50
 }
-.section-logo{
+
+.section-logo {
   @apply text-[2.5rem] md:text-5xl text-primary drop-shadow-lg
 }
 
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet{
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
   @apply bg-primary;
 }
 
@@ -117,54 +118,131 @@
   .tablist {
     @apply flex-col h-full bg-transparent gap-y-5
   }
-  .trigger{
-    @apply py-[.3rem] 
+
+  .trigger {
+    @apply py-[.3rem]
   }
 }
 
 @keyframes wave {
-  0%, 25%, 100% {
+
+  0%,
+  25%,
+  100% {
     transform: rotate(45deg);
   }
-  12.5%, 37.5% {
+
+  12.5%,
+  37.5% {
     transform: rotate(0deg);
   }
 }
+
 .animate-wave {
-  animation: wave 1.5s  ease-in-out infinite ;
+  animation: wave 1.5s ease-in-out infinite;
 }
 
 @keyframes shake {
-  0%, 100% {
-    
+
+  0%,
+  100% {
+
     transform: translateX(0);
   }
-  12.5%, 37.5% {
-    transform: translateX(-2px); /* Move to the left */
+
+  12.5%,
+  37.5% {
+    transform: translateX(-2px);
+    /* Move to the left */
   }
-  62.5%, 87.5% {
-    transform: translateX(2px); /* Move to the right */
+
+  62.5%,
+  87.5% {
+    transform: translateX(2px);
+    /* Move to the right */
   }
 }
 
 
 @keyframes pulse {
   0% {
-    
+
     color: var(--foreground);
   }
-  25%, 50%{
-    color: green; /* Move to the left */
+
+  25%,
+  50% {
+    color: green;
+    /* Move to the left */
   }
+
   100% {
     color: var(--foreground);
   }
 }
 
-.animate-live-link{
+.animate-live-link {
   animation: pulse 5s ease-in-out infinite;
 }
 
 .animate-shake {
   animation: shake 1s ease-in-out infinite;
+}
+
+
+
+
+/* button animations  */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  display: flex;
+  transition: all .4s ease-in-out;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.119));
+
+}
+
+.btn_span {
+  color: white;
+  z-index: 10;
+
+
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: linear-gradient(to right, #6D28D9, #CF425A);
+
+  border: .5px solid rgba(255, 255, 255, 0.663);
+  box-shadow: 3px 3px 30px 7px white;
+  display: block;
+  overflow: hidden;
+  border-radius: 200%;
+  transform: translateY(-175%);
+  transition: all .6s ease-in-out;
+  z-index: -1;
+
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  
+}
+
+.btn:hover::before {
+  border-radius: 0%;
+  transform: translateY(0%);
+  z-index: 12;
+
+}
+
+.btn:hover .btn_span {
+
+  z-index: 100;
+  color: white;
 }

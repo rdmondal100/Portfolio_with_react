@@ -1,10 +1,20 @@
-import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6, figmaToLandigPage_1 } from "@/assets"
+import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6, figmaToLandigPage_1, aiArticleSummerizer } from "@/assets"
 import { useId } from "react"
 
 const useProjectList = () => {
   
 
   const projectData = [
+    {
+      image: aiArticleSummerizer,
+      category: 'react js',
+      name: "Ai Article Summerizer",
+      blurhash:"L8Q,gry=Twy.1VX2w0St2}X2n9WB",
+      description: "This is a ai tool that can summerize any article by using their link. You have to just put the link and hit Enter and then get the summerized article",
+      link: 'https://ai-article-summerizer-lr9paiowg-riday-mondals-projects.vercel.app/',
+      github: 'https://github.com/rdmondal100/ai-article-summerizer',
+      id:10
+    },
     {
       image: figmaToLandigPage_1,
       category: 'react js',

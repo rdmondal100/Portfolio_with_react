@@ -29,7 +29,11 @@ const Work = () => {
 </div>
           <p className=" pb-6 text-center xl:text-lg  text-md pl-5  leading-[2rem] text-foreground/90">Create your modern optimized websites with React.js, HTML, CSS, JavaScript, and Tailwind CSS. Features include a modern interface, intuitive navigation, speed-loading, fully customizations and more. Optimized for cross-browser compatibility and performance on all devices. </p>
           <Link to={'/projects'}>
-            <Button className='text-lg'>All Projects</Button>
+            <Button className='text-lg btn'>
+              <span className="btn_span ">
+              All Projects
+                </span>
+                </Button>
           </Link>
         </div>
         {/* slider */}
