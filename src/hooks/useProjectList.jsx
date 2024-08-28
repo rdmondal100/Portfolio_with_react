@@ -1,10 +1,20 @@
-import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6, figmaToLandigPage_1, aiArticleSummerizer } from "@/assets"
+import { w1, w2, w3, w4,portfolio,socialMedia_sociallife, w5, w6, figmaToLandigPage_1, aiArticleSummerizer, ochiDesignClone } from "@/assets"
 import { useId } from "react"
 
 const useProjectList = () => {
   
 
   const projectData = [
+    {
+      image: ochiDesignClone,
+      category: 'react js',
+      name: "Ochi design website clone",
+      blurhash:"LEM[1a%d4oy20J9X_4o=r%Rit7oN",
+      description: " This is a website that i have cloned from internet. The original website is https://ochi.design/ . I have tried to clone this site to show my skill on web development",
+      link: 'https://clone-ochi-design-by-riday.netlify.app/',
+      github: 'https://github.com/rdmondal100/Ochi-design-cloned',
+      id:11
+    },
     {
       image: aiArticleSummerizer,
       category: 'react js',
