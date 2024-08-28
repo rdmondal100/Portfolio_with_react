@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 192.168.0.102",
+    "dev": "vite --host 192.168.0.107",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -22,6 +22,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.14",
+    "lenis": "^1.1.13",
     "lucide-react": "^0.358.0",
     "react": "^18.2.0",
     "react-blurhash": "^0.3.0",

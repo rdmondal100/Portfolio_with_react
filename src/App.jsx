@@ -6,6 +6,7 @@ import Contact from "./pages/Contact.jsx";
 import RootLayout from "./pages/RootLayout.jsx";
 import { useEffect } from "react";
 import ProjectDetails from "./components/ProjectDetails.jsx";
+import SmoothScrolling from "./components/SmoothScrolling.jsx";
 
 function App() {
     const { pathname } = useLocation();
@@ -24,6 +25,7 @@ function App() {
     }, [pathname, navigate]);
 
     return (
+        <SmoothScrolling>
         <Routes>
             <Route element={<RootLayout />}>
                 <Route index element={<Home />} />
@@ -35,6 +37,8 @@ function App() {
                 <Route path='/contact' element={<Contact />} />
             </Route>
         </Routes>
+        </SmoothScrolling>
+
     );
 }
 
