@@ -16,39 +16,39 @@ const Reviews = () => {
   const reviesData = [
     {
       avatar: avater1,
-      name: 'Devid Wornar',
-      job: 'Chef',
-      review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, obcaecati adipisicing elit. Cumque, obcaecati'
+      name: 'nikolauo',
+      job: 'CEO',
+      review: 'Riday has an excellent eye for detail and design. He was also very helpful in advising me on key decisions, such as selecting the right hosting platform and defining MVP features.'
     },
     {
       avatar: avater2,
-      name: 'Maria ',
+      name: 'rachelgreen ',
       job: 'Infulencer',
-      review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, obcaecati'
+      review: 'Riday is a remarkable guy to collaborate with. His response and attention to detail are impeccable. I will definitely work with him again in the near future. Thank you.'
     },
     {
       avatar: avater3,
-      name: 'Ben Stock',
-      job: 'Gym Trainer',
-      review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, obcaecati adipisicing elit. Cumque, obcaecati'
+      name: 'rickybhurji',
+      job: 'Agency Owner',
+      review: 'Very professional, delivered on time, followed instructions clearly, and met above expectations. A very great collaborator and made some great suggestions.'
     },
     {
       avatar: avater4,
-      name: 'Sophia',
-      job: 'Doctor',
-      review: 'Lorem ipsum, amet consectetur adipisicing elit. Cumque, obcaecati dolor sit amet consectetur adipisicing elit. Cumque, obcaecati'
+      name: 'mariajblanc',
+      job: 'Infulencer',
+      review: 'I sent Riday a message, got a reply within a minute. He sent over the offer for the quick job. Amazing quality, truly impressed by the speed and quality. Will comeback soon.'
     },
     {
       avatar: avater5,
-      name: 'Harry',
-      job: 'Actor',
-      review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, obcaecati'
+      name: 'robeherbe',
+      job: 'Real estate agent',
+      review: 'The service was incredibly fast, exceptionally accurate, and completely free of bugs. Communication was smooth and effortless throughout the entire process. I will definitely be working with this PRO on my next project.'
     },
     {
       avatar: avater6,
-      name: 'Carry Minati',
+      name: 'briangitta',
       job: 'Youtuber',
-      review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, obcaecati  amet consectetur adipisicing elit. Cumque, obcaecati '
+      review: 'An excellent professional, kind, and punctual. For him, the quality of the work and the results are more important than the pay. This attitude made our entire team enjoy working with him and eager to continue our collaboration—and we will!'
     },
   ]
   return (

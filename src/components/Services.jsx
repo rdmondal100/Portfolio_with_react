@@ -16,13 +16,13 @@ const servicesData = [
         icon: <HiPaintBrush />,
         title: "Web Design",
         descriptions:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt molestias deserunt, ducimus necessitatibus adipisci?",
+            "We create stunning and effective web designs that elevate your brand and help you connect with more customers.",
     },
     {
         icon: <FaLaptopCode />,
         title: "Web Development",
         descriptions:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt molestias deserunt, ducimus necessitatibus adipisci?",
+            "We help businesses succeed by creating professional, high-quality websites that enhance your online presence and attract more clients.",
     },
     {
         icon: <TbDeviceMobileCode />,
