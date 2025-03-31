@@ -11,7 +11,7 @@ import w5 from '../assets/work/Engaging blog websites using react js.jpg'
 import figmaToLandigPage_1 from '../assets/work/convert figma landing page design uisng reactJs and tailwind css.jpg'
 import aiArticleSummerizer from '../assets/work/create ai article summerizer uisng open ai api and react js.jpg'
 import w6 from '../assets/work/Optimized business website using react js.jpg'
-import ochiDesignClone from '../assets/work/ochi design website cloned by riday , riday.tech.png'
+import ochiDesignClone from '../assets/work/Ochi design cloned website by riday mondal using react js gsap locomotive and tailwind css.jpg'
 
 import avater1 from '../assets/reviews/avatar-1.png'
 import avater2 from '../assets/reviews/avatar-2.png'
